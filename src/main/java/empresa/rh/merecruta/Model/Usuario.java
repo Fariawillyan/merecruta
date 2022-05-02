@@ -3,10 +3,7 @@ package empresa.rh.merecruta.Model;
 
 import lombok.Data;
 
-import javax.persistence.Entity;
-import javax.persistence.GeneratedValue;
-import javax.persistence.GenerationType;
-import javax.persistence.Id;
+import javax.persistence.*;
 
 @Data
 @Entity
@@ -23,5 +20,6 @@ public class Usuario {
         private String cargo;
         private String descricao;
         private String password;
-        private String role;
+
+
 }
