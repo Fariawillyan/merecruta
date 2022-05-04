@@ -7,7 +7,7 @@ import javax.persistence.*;
 
 @Data
 @Entity
-public class Usuario {
+public class Cadastro {
 
         @Id @GeneratedValue(strategy = GenerationType.IDENTITY)
         private Long id;
@@ -17,9 +17,8 @@ public class Usuario {
         private String email;
         private String recrutimetro;
         private String imagemLinkedin;
-        private String cargo;
+        private String profissao;
         private String descricao;
-        private String password;
 
 
 }

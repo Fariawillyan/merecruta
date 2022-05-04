@@ -1,9 +1,9 @@
 package empresa.rh.merecruta.Repository;
 
-import empresa.rh.merecruta.Model.Usuario;
+import empresa.rh.merecruta.Model.Cadastro;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.stereotype.Repository;
 
 @Repository
-public interface UsuarioRepository extends JpaRepository<Usuario, Long> {
+public interface CadastroRepository extends JpaRepository<Cadastro, Long> {
 }
