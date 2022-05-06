@@ -20,6 +20,7 @@ public class RequisicaoNovoCadastro {
         cadastro.setNomeUsuario(nomeUsuario);
         cadastro.setEmail(email);
         cadastro.setUrlLinkedin(urlLinkedin);
+        cadastro.setProfissao(profissao);
         return cadastro;
     }
 }

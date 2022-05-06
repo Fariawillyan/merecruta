@@ -7,9 +7,12 @@
 
 </head>
     <body>
+
     <div class="container">
             <!-- Navbar content -->
-            <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+
+            <nav class="navbar navbar-expand-lg navbar-dark bg-primary ">
+
                 <div class="container-fluid">
                     <!-- imagem icone -->
                    <img src="https://thumbs2.imgbox.com/6e/ec/yLCsWcVa_t.png" alt="" width="30" height="24"/></a>
@@ -38,7 +41,7 @@
                                 </ul>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link disabled">Disabled</a>
+                                <a class="nav-link disabled">outros</a>
                             </li>
 
                             <!--cadastrar banco talento aqui-->
@@ -46,14 +49,7 @@
 
                             <!--futuro login aqui-->
                             <a href="/login"><button class="btn btn-outline-light my-2 my-sm-0">Login</button></a>
-
-
-
-
                         </ul>
-
-
-
                             <!--buscador button-->
                         <form class="d-flex">
                             <input class="form-control me-2" type="search" placeholder="Banco de Talentos" aria-label="Search">
@@ -64,10 +60,38 @@
             </nav>
 
 
-         <div class="card" style="width: 300px" th:each="cadastro : ${cadastro}">
-             <div class="card-header align-content-center" th:text="${cadastro.getProfissao}">Cargo</div>
+        <!-- CARDS -->
+
+        <div class="card text-center " th:each="cadastro : ${cadastro}">
+            <div class="card-header">
+                <ul class="nav nav-pills card-header-pills">
+                    <li class="nav-item">
+                        <a class="nav-link active" th:text="${cadastro.nomeUsuario}">Ativo</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" th:href="${cadastro.urlLinkedin}">Linkedin</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link disabled">outros</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="card-body">
+                <h5><div  class="nav-fill" th:text="${cadastro.profissao}">Profissão</div></h5>
+                <img src="/static/fotousuario.jpg" class="rounded float-start" width="200" height="200" alt="">
+                <div class="nav" th:text="${cadastro.descricao}">Descricao</div>
+                <a href="#" class="btn btn-primary">Me recruta</a>
+            </div>
+        </div>
+
+
+        <!--
+         <div class="card text-black bg-light mb-3"  style="width: 300px" th:each="cadastro : ${cadastro}">
+             <div class="card-header align-content-center" th:text="${cadastro.getProfissao}">Profissão</div>
                  <div class="card-body">
-                     <div class="w-auto">
+                     <div class="row">
                          <div class="col-12">
                             <img th:src="${cadastro.imagemLinkedin}" class="card-img-top" alt="...">
                             <div th:text="${cadastro.nomeUsuario}" > Nome do Usuario</div>
@@ -78,11 +102,18 @@
 
                             <div class="form-control" th:text="${cadastro.descricao}">Descricao</div>
                             <a href="#" class="btn btn-primary">Me Recruta</a>
+                              para colocar ultima alteracao..
+
+                              class="card-text"><small class="text-muted">Atualizados 3 minutos atrás</small></p-->
                         </div>
                     </div>
                 </div>
             </div>
         </div>
+
+    </div>
+
+
     </body>
 
 
