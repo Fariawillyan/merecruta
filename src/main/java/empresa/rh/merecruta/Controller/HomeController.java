@@ -17,7 +17,7 @@ public class HomeController {
     private CadastroRepository cadastroRepository;
 
     @GetMapping("/home")
-    public String home(Model model){
+    public String home(Model model) {
         List<Cadastro> cadastros = cadastroRepository.findAll();
         model.addAttribute("cadastro", cadastros);
         return "home";

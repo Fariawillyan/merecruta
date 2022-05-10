@@ -9,55 +9,63 @@
     <body>
 
     <div class="container">
-            <!-- Navbar content -->
+        <!-- Navbar content -->
 
-            <nav class="navbar navbar-expand-lg navbar-dark bg-primary ">
+        <nav class="navbar navbar-expand-lg navbar-dark bg-primary ">
 
-                <div class="container-fluid">
-                    <!-- imagem icone -->
-                   <img src="https://thumbs2.imgbox.com/6e/ec/yLCsWcVa_t.png" alt="" width="30" height="24"/></a>
+            <div class="container-fluid">
+                <!-- imagem icone -->
+                <img src="https://thumbs2.imgbox.com/6e/ec/yLCsWcVa_t.png" alt="" width="30" height="24"/></a>
 
-                    <a class="navbar-brand" href="#">Recruta</a>
-                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                        <span class="navbar-toggler-icon"></span>
-                    </button>
-                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                            <li class="nav-item">
-                                <a class="nav-link active" aria-current="page" href="#">Início</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="#">Sobre</a>
-                            </li>
-                            <li class="nav-item dropdown">
-                                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                                    Novidades
-                                </a>
-                                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                                    <li><a class="dropdown-item" href="#">Action</a></li>
-                                    <li><a class="dropdown-item" href="#">Another action</a></li>
-                                    <li><hr class="dropdown-divider"></li>
-                                    <li><a class="dropdown-item" href="#">Something else here</a></li>
-                                </ul>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link disabled">outros</a>
-                            </li>
+                <a class="navbar-brand" href="#">Recruta</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                        aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="#">Início</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Sobre</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                               data-bs-toggle="dropdown" aria-expanded="false">
+                                Novidades
+                            </a>
+                            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <li><a class="dropdown-item" href="#">Action</a></li>
+                                <li><a class="dropdown-item" href="#">Another action</a></li>
+                                <li>
+                                    <hr class="dropdown-divider">
+                                </li>
+                                <li><a class="dropdown-item" href="#">Something else here</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link disabled">outros</a>
+                        </li>
 
-                            <!--cadastrar banco talento aqui-->
-                            <a href="/formulario" class="nav-link active" aria-current="page">Cadastrar Talento</a>
+                        <!--cadastrar banco talento aqui-->
+                        <a href="/formulario" class="nav-link active" aria-current="page">Cadastrar Talento</a>
 
-                            <!--futuro login aqui-->
-                            <a href="/login"><button class="btn btn-outline-light my-2 my-sm-0">Login</button></a>
-                        </ul>
-                            <!--buscador button-->
-                        <form class="d-flex">
-                            <input class="form-control me-2" type="search" placeholder="Banco de Talentos" aria-label="Search">
-                            <button class="btn btn-outline-light" type="submit">Buscar</button>
-                        </form>
-                    </div>
+                        <!--futuro login aqui-->
+                        <a href="/login">
+                            <button class="btn btn-outline-light my-2 my-sm-0">Login</button>
+                        </a>
+                    </ul>
+                    <!--buscador button-->
+                    <form class="d-flex">
+                        <input class="form-control me-2" type="search" placeholder="Banco de Talentos"
+                               aria-label="Search">
+                        <button class="btn btn-outline-light" type="submit">Buscar</button>
+                    </form>
                 </div>
-            </nav>
+            </div>
+        </nav>
 
 
         <!-- CARDS -->
@@ -78,8 +86,11 @@
                     </li>
                 </ul>
             </div>
+
             <div class="card-body">
-                <h5><div  class="nav-fill" th:text="${cadastro.profissao}">Profissão</div></h5>
+                <h5>
+                    <div class="nav-fill" th:text="${cadastro.profissao}">Profissão</div>
+                </h5>
                 <img src="/static/fotousuario.jpg" class="rounded float-start" width="200" height="200" alt="">
                 <div class="nav" th:text="${cadastro.descricao}">Descricao</div>
                 <a href="#" class="btn btn-primary">Me recruta</a>
@@ -104,12 +115,12 @@
                             <a href="#" class="btn btn-primary">Me Recruta</a>
                               para colocar ultima alteracao..
 
-                              class="card-text"><small class="text-muted">Atualizados 3 minutos atrás</small></p-->
+                              class="card-text"><small class="text-muted">Atualizados 3 minutos atrás</small></p
                         </div>
                     </div>
                 </div>
             </div>
-        </div>
+        </div>-->
 
     </div>
 

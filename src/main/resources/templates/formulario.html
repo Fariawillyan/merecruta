@@ -1,8 +1,9 @@
 <html lang="en">
 <meta charset="UTF-8">
-<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+      integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
 
-<link href="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet" >
+<link href="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet">
 <script src="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
 <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 <!------ Include the above in your HEAD tag ---------->
@@ -28,29 +29,41 @@
                 <div class="form-group">
 
                     <div class="col-md-11 control-label">
-                        <p class="help-block"><h11>*</h11> Campo Obrigatório </p>
+                        <p class="help-block">
+                            <h11>*</h11>
+                            Campo Obrigatório
+                        </p>
                     </div>
                 </div>
 
                 <!-- Text input-->
                 <div class="form-group">
-                    <label class="col-md-2 control-label" for="nomeUsuario">Nome <h11>*</h11></label>
+                    <label class="col-md-2 control-label" for="nomeUsuario">Nome
+                        <h11>*</h11>
+                    </label>
                     <div class="col-md-8">
-                        <input id="nomeUsuario" name="nomeUsuario" placeholder="" class="form-control input-md" required="" type="text">
+                        <input id="nomeUsuario" name="nomeUsuario" placeholder="" class="form-control input-md"
+                               required="" type="text">
                     </div>
 
                 </div>
                 <div class="form-group">
-                    <label class="col-md-2 control-label" for="profissao">Profissão <h11>*</h11></label>
+                    <label class="col-md-2 control-label" for="profissao">Profissão
+                        <h11>*</h11>
+                    </label>
                     <div class="col-md-8">
-                        <input id="profissao" name="profissao" placeholder="" class="form-control input-md" required="" type="text">
+                        <input id="profissao" name="profissao" placeholder="" class="form-control input-md" required=""
+                               type="text">
                     </div>
 
                 </div>
                 <div class="form-group">
-                    <label class="col-md-2 control-label" for="urlLinkedin">LinkedIn <h11>*</h11></label>
+                    <label class="col-md-2 control-label" for="urlLinkedin">LinkedIn
+                        <h11>*</h11>
+                    </label>
                     <div class="col-md-8">
-                        <input id="urlLinkedin" name="urlLinkedin" placeholder="" class="form-control input-md" required="" type="text">
+                        <input id="urlLinkedin" name="urlLinkedin" placeholder="" class="form-control input-md"
+                               required="" type="text">
                     </div>
 
                 </div>
@@ -65,19 +78,27 @@
                         <input id="cpf" name="cpf" placeholder="Apenas números" class="form-control input-md" required="" type="text" maxlength="11" pattern="[0-9]+$">
                     </div> -->
 
-                    <label class="col-md-2 control-label" for="email">Email <h11>*</h11></label>
+                    <label class="col-md-2 control-label" for="email">Email
+                        <h11>*</h11>
+                    </label>
                     <div class="col-md-2">
-                        <input id="email" name="email" placeholder="Digite melhor email" class="form-control input-md" required="" type="text" maxlength="50">
+                        <input id="email" name="email" placeholder="Digite melhor email" class="form-control input-md"
+                               required="" type="text" maxlength="50">
                     </div>
 
-                    <label class="col-md-1 control-label" for="data">Aniversário<h11>*</h11></label>
+                    <label class="col-md-1 control-label" for="data">Aniversário
+                        <h11>*</h11>
+                    </label>
                     <div class="col-md-2">
-                        <input id="data" name="data" placeholder="DD/MM/AAAA" class="form-control input-md" required="" type="date" maxlength="10" OnKeyPress="formatar('##/##/####', this)" onBlur="showhide()">
+                        <input id="data" name="data" placeholder="DD/MM/AAAA" class="form-control input-md" required=""
+                               type="date" maxlength="10" OnKeyPress="formatar('##/##/####', this)" onBlur="showhide()">
                     </div>
 
-                    <label class="col-md-1 control-label" for="estado">Estado<h11>*</h11></label>
+                    <label class="col-md-1 control-label" for="estado">Estado
+                        <h11>*</h11>
+                    </label>
                     <div class="col-md-2">
-                        <input id="estado" name="estado" placeholder="Estado" class="form-control input-md" required="" >
+                        <input id="estado" name="estado" placeholder="Estado" class="form-control input-md" required="">
                     </div>
 
 
@@ -88,7 +109,9 @@
 
                 <!-- Textarea -->
                 <div class="form-group">
-                    <label class="col-md-2 control-label" for="descricao"> Descrição <h11>*</h11></label>
+                    <label class="col-md-2 control-label" for="descricao"> Descrição
+                        <h11>*</h11>
+                    </label>
                     <div class="col-md-8">
                         <textarea class="form-control" id="descricao" name="descricao"></textarea>
                     </div>
@@ -111,7 +134,7 @@
     </fieldset>
 </form>
 <script>
-    CKEDITOR.replace( 'descricao' );
+    CKEDITOR.replace('descricao');
 </script>
 </body>
 </html>

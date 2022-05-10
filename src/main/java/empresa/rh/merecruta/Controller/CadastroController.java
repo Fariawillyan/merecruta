@@ -8,9 +8,12 @@ import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
+import org.springframework.validation.BindingResult;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
+
+import javax.validation.Valid;
 
 @Controller
 public class CadastroController {
@@ -31,7 +34,10 @@ public class CadastroController {
     private CadastroService cadastroService;
 
     @PostMapping("/novo")
-    public String novoCadastro(RequisicaoNovoCadastro requisicao) {
+    public String novoCadastro(@Valid RequisicaoNovoCadastro requisicao, BindingResult result) {
+        if (result.hasErrors()){
+            return "formulario";
+        }
 
         LOGGER.info("ACHA SALVAR CADASTRO");
 
