@@ -2,7 +2,6 @@ package empresa.rh.merecruta.Controller;
 
 import empresa.rh.merecruta.Controller.dto.RequisicaoNovoCadastro;
 import empresa.rh.merecruta.Model.Cadastro;
-import empresa.rh.merecruta.Repository.CadastroRepository;
 import empresa.rh.merecruta.Service.CadastroService;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -11,7 +10,6 @@ import org.springframework.stereotype.Controller;
 import org.springframework.validation.BindingResult;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PostMapping;
-import org.springframework.web.bind.annotation.RequestMapping;
 
 import javax.validation.Valid;
 
@@ -35,7 +33,7 @@ public class CadastroController {
 
     @PostMapping("/novo")
     public String novoCadastro(@Valid RequisicaoNovoCadastro requisicao, BindingResult result) {
-        if (result.hasErrors()){
+        if (result.hasErrors()) {
             return "formulario";
         }
 
@@ -45,7 +43,6 @@ public class CadastroController {
         cadastroService.saveCadastro(cadastro);
 
         return "formulario";
-
 
     }
 

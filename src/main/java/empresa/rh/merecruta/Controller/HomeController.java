@@ -22,9 +22,4 @@ public class HomeController {
         model.addAttribute("cadastro", cadastros);
         return "home";
     }
-
-
-
-
-
 }
