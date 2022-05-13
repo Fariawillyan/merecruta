@@ -12,8 +12,7 @@ public class LoginController {
 
     private final Logger LOGGER = LoggerFactory.getLogger(LoginController.class);
 
-    @GetMapping
-    @RequestMapping("/login")
+    @GetMapping("/login")
     public String login() {
 
         LOGGER.info("ACHA LOGIN");
