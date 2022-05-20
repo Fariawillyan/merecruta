@@ -16,7 +16,6 @@ public class LoginController {
     public String login() {
 
         LOGGER.info("ACHA LOGIN");
-
         return "login";
     }
 
