@@ -3,129 +3,144 @@
     <meta charset="UTF-8">
     <title>merecruta</title>
     <!-- CSS only -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+          integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
 
 </head>
-    <body>
+<body>
 
-    <div class="container">
-        <!-- Navbar content -->
 
-        <nav class="navbar navbar-expand-lg navbar-dark bg-primary ">
+<div class="container">
+    <!-- Navbar content -->
 
-            <div class="container-fluid">
-                <!-- imagem icone -->
-                <img src="https://thumbs2.imgbox.com/6e/ec/yLCsWcVa_t.png" alt="" width="30" height="24"/></a>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary ">
 
-                <a class="navbar-brand" href="#">Recruta</a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                        data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
-                        aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                        <li class="nav-item">
-                            <a class="nav-link active" aria-current="page" href="#">Início</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">Sobre</a>
-                        </li>
-                        <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
-                               data-bs-toggle="dropdown" aria-expanded="false">
-                                Novidades
-                            </a>
-                            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                                <li><a class="dropdown-item" href="#">Action</a></li>
-                                <li><a class="dropdown-item" href="#">Another action</a></li>
-                                <li>
-                                    <hr class="dropdown-divider">
-                                </li>
-                                <li><a class="dropdown-item" href="#">Something else here</a></li>
-                            </ul>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link disabled">outros</a>
-                        </li>
+        <div class="container-fluid">
+            <!-- imagem icone -->
+            <img src="https://thumbs2.imgbox.com/6e/ec/yLCsWcVa_t.png" alt="" width="30" height="24"/></a>
 
-                        <!--cadastrar banco talento aqui-->
-                        <a href="/formulario" class="nav-link active" aria-current="page">Cadastrar Talento</a>
+            <a class="navbar-brand" href="#">Recruta</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#">Início</a>
+                    </li>
 
-                        <!--futuro login aqui-->
-                        <a href="/login">
-                            <button class="btn btn-outline-light my-2 my-sm-0">Login</button>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/sobre">Sobre</a>
+                    </li>
+
+
+
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                           data-bs-toggle="dropdown" aria-expanded="false">
+                            Novidades
                         </a>
-                    </ul>
-                    <!--buscador button-->
-                    <form class="d-flex">
-                        <input class="form-control me-2" type="search" placeholder="Banco de Talentos"
-                               aria-label="Search">
-                        <button class="btn btn-outline-light" type="submit">Buscar</button>
-                    </form>
-                </div>
-            </div>
-        </nav>
-
-
-        <!-- CARDS -->
-
-        <div class="card text-center " th:each="cadastro : ${cadastro}">
-            <div class="card-header">
-                <ul class="nav nav-pills card-header-pills">
-                    <li class="nav-item">
-                        <a class="nav-link active" th:text="${cadastro.nomeUsuario}">Ativo</a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <li><a class="dropdown-item" href="#">Action</a></li>
+                            <li><a class="dropdown-item" href="#">Another action</a></li>
+                            <li>
+                                <hr class="dropdown-divider">
+                            </li>
+                            <li><a class="dropdown-item" href="#">Something else here</a></li>
+                        </ul>
                     </li>
-
-                    <li class="nav-item">
-                        <a class="nav-link" th:href="${cadastro.urlLinkedin}">Linkedin</a>
-                    </li>
-
                     <li class="nav-item">
                         <a class="nav-link disabled">outros</a>
                     </li>
-                </ul>
-            </div>
 
-            <div class="card-body">
-                <h5>
-                    <div class="nav-fill" th:text="${cadastro.profissao}">Profissão</div>
-                </h5>
-                <img src="/static/fotousuario.jpg" class="rounded float-start" width="200" height="200" alt="">
-                <div class="nav" th:text="${cadastro.descricao}">Descricao</div>
-                <a href="#" class="btn btn-primary">Me recruta</a>
+                    <!--cadastrar banco talento aqui-->
+                    <a href="/formulario" class="nav-link active" aria-current="page">Cadastrar Talento</a>
+
+
+                    <!-- login aqui-->
+                    <a sec:authorize="!isAuthenticated()" href="/login">
+                        <button class="btn btn-outline-light my-2 my-sm-0">Login</button>
+                    </a>
+                    <a sec:authorize="isAuthenticated()" href="/logout">
+                        <button class="btn btn-outline-light my-2 my-sm-0">Logout</button>
+                    </a>
+
+
+
+                </ul>
+                <!--buscador button-->
+                <form class="d-flex">
+                    <input class="form-control me-2" type="search" placeholder="Banco de Talentos"
+                           aria-label="Search">
+                    <button class="btn btn-outline-light" type="submit">Buscar</button>
+                </form>
             </div>
         </div>
+    </nav>
 
 
-        <!--
-         <div class="card text-black bg-light mb-3"  style="width: 300px" th:each="cadastro : ${cadastro}">
-             <div class="card-header align-content-center" th:text="${cadastro.getProfissao}">Profissão</div>
-                 <div class="card-body">
-                     <div class="row">
-                         <div class="col-12">
-                            <img th:src="${cadastro.imagemLinkedin}" class="card-img-top" alt="...">
-                            <div th:text="${cadastro.nomeUsuario}" > Nome do Usuario</div>
-                            <div th:text="${cadastro.email}" > Email do Usuario</div>
-                            <div th:text="${cadastro.urlLinkedin}" > URL linkedin</div>
-                            <div th:text="${cadastro.recrutimetro}" > Recrutimetro</div>
+    <!-- CARDS -->
 
+    <div class="card text-center " th:each="cadastro : ${cadastro}">
+        <div class="card-header">
+            <ul class="nav nav-pills card-header-pills">
+                <li class="nav-item">
+                    <a class="nav-link active" th:text="${cadastro.nomeUsuario}">Ativo</a>
+                </li>
 
-                            <div class="form-control" th:text="${cadastro.descricao}">Descricao</div>
-                            <a href="#" class="btn btn-primary">Me Recruta</a>
-                              para colocar ultima alteracao..
+                <li class="nav-item">
+                    <a class="nav-link" th:href="${cadastro.urlLinkedin}">Linkedin</a>
+                </li>
 
-                              class="card-text"><small class="text-muted">Atualizados 3 minutos atrás</small></p
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>-->
+                <li class="nav-item">
+                    <a class="nav-link disabled">outros</a>
+                </li>
+            </ul>
+        </div>
 
+        <div class="card-body">
+            <h5>
+                <div class="nav-fill" th:text="${cadastro.profissao}">Profissão</div>
+            </h5>
+            <img src="/static/fotousuario.jpg" class="rounded float-start" width="200" height="200" alt="">
+            <div class="nav" th:text="${cadastro.descricao}">Descricao</div>
+            <a href="#" class="btn btn-primary">Me recruta</a>
+        </div>
     </div>
 
 
-    </body>
+    <!--
+     <div class="card text-black bg-light mb-3"  style="width: 300px" th:each="cadastro : ${cadastro}">
+         <div class="card-header align-content-center" th:text="${cadastro.getProfissao}">Profissão</div>
+             <div class="card-body">
+                 <div class="row">
+                     <div class="col-12">
+                        <img th:src="${cadastro.imagemLinkedin}" class="card-img-top" alt="...">
+                        <div th:text="${cadastro.nomeUsuario}" > Nome do Usuario</div>
+                        <div th:text="${cadastro.email}" > Email do Usuario</div>
+                        <div th:text="${cadastro.urlLinkedin}" > URL linkedin</div>
+                        <div th:text="${cadastro.recrutimetro}" > Recrutimetro</div>
+
+
+                        <div class="form-control" th:text="${cadastro.descricao}">Descricao</div>
+                        <a href="#" class="btn btn-primary">Me Recruta</a>
+                          para colocar ultima alteracao..
+
+                          class="card-text"><small class="text-muted">Atualizados 3 minutos atrás</small></p
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>-->
+
+</div>
+
+
+</body>
 
 
 </html>
