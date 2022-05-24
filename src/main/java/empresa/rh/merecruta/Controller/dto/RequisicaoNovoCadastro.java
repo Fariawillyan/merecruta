@@ -26,6 +26,8 @@ public class RequisicaoNovoCadastro {
 
     private String data;
 
+    private String urlLinkedinImagem;
+
     public Cadastro toCasdastro() {
         Cadastro cadastro = new Cadastro();
         cadastro.setDescricao(descricao);
@@ -33,6 +35,7 @@ public class RequisicaoNovoCadastro {
         cadastro.setEmail(email);
         cadastro.setUrlLinkedin(urlLinkedin);
         cadastro.setProfissao(profissao);
+        cadastro.setUrlLinkedinImagem(urlLinkedinImagem);
         return cadastro;
     }
 }

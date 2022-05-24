@@ -19,4 +19,5 @@ public class Cadastro {
         private String imagemLinkedin;
         private String profissao;
         private String descricao;
+        private String urlLinkedinImagem;
 }

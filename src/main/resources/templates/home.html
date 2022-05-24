@@ -1,4 +1,6 @@
-<html xmlns="http://www.w3.org/1999/xhtml" xmlns:th="http://www.thymeleaf.org" lang="pt">
+<html xmlns:sec="http://www.w3.org/1999/xhtml" lang="en"
+      xmlns:th="http://www.w3.org/1999/xhtml">
+
 <head>
     <meta charset="UTF-8">
     <title>merecruta</title>
@@ -19,7 +21,7 @@
 
         <div class="container-fluid">
             <!-- imagem icone -->
-            <img src="https://thumbs2.imgbox.com/6e/ec/yLCsWcVa_t.png" alt="" width="30" height="24"/></a>
+            <img src="https://thumbs2.imgbox.com/6e/ec/yLCsWcVa_t.png" alt="" width="30" height="24"/>
 
             <a class="navbar-brand" href="#">Recruta</a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
@@ -28,6 +30,7 @@
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
+
                 <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                     <li class="nav-item">
                         <a class="nav-link active" aria-current="page" href="#">Início</a>
@@ -36,7 +39,6 @@
                     <li class="nav-item">
                         <a class="nav-link" href="/sobre">Sobre</a>
                     </li>
-
 
 
                     <li class="nav-item dropdown">
@@ -69,8 +71,6 @@
                         <button class="btn btn-outline-light my-2 my-sm-0">Logout</button>
                     </a>
 
-
-
                 </ul>
                 <!--buscador button-->
                 <form class="d-flex">
@@ -89,12 +89,12 @@
         <div class="card-header">
             <ul class="nav nav-pills card-header-pills">
                 <li class="nav-item">
-                    <a class="nav-link active" th:text="${cadastro.nomeUsuario}">Ativo</a>
+                    <a class="nav-link active" th:text="${cadastro.nomeUsuario}">Nome</a>
                 </li>
 
-                <li class="nav-item">
-                    <a class="nav-link" th:href="${cadastro.urlLinkedin}">Linkedin</a>
-                </li>
+                  <li class="nav-item">
+                      <a class="nav-link" th:href="${cadastro.urlLinkedin}">Linkedin</a>
+                  </li>
 
                 <li class="nav-item">
                     <a class="nav-link disabled">outros</a>
@@ -106,7 +106,12 @@
             <h5>
                 <div class="nav-fill" th:text="${cadastro.profissao}">Profissão</div>
             </h5>
-            <img src="/static/fotousuario.jpg" class="rounded float-start" width="200" height="200" alt="">
+
+<!--
+            imagem do perfil
+-->
+            <img th:src="${cadastro.urlLinkedinImagem}" class="rounded float-start" width="200" height="200" alt="" src="">
+            
             <div class="nav" th:text="${cadastro.descricao}">Descricao</div>
             <a href="#" class="btn btn-primary">Me recruta</a>
         </div>
