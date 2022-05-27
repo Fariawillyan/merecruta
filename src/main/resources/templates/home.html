@@ -89,16 +89,25 @@
         <div class="card-header">
             <ul class="nav nav-pills card-header-pills">
                 <li class="nav-item">
-                    <a class="nav-link active" th:text="${cadastro.nomeUsuario}">Nome</a>
+                    Nome: <a class="nav-link " th:text="${cadastro.nomeUsuario}">Nome</a>
                 </li>
 
                   <li class="nav-item">
-                      <a class="nav-link" th:href="${cadastro.urlLinkedin}">Linkedin</a>
+                      Rede: <a class="nav-link" th:href="${cadastro.urlLinkedin}">Linkedin</a>
                   </li>
 
                 <li class="nav-item">
-                    <a class="nav-link disabled">outros</a>
+                    Contato: <a class="nav-link" th:text="${cadastro.email}">Email</a>
                 </li>
+
+                <li class="nav-item">
+                    Pret. Salarial: <a class="nav-link" th:text="${cadastro.pretencaoSalarial}">Pretencao Salarial</a>
+                </li>
+
+                <li class="nav-item">
+                    Trabalho: <a class="nav-link" th:text="${cadastro.local}">Local</a>
+                </li>
+
             </ul>
         </div>
 

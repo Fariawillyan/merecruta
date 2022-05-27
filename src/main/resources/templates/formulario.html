@@ -24,6 +24,7 @@
     <fieldset>
         <div class="panel panel-primary">
             <div class="panel-heading">Cadastrar Novo Talento</div>
+            <div class="panel-title">Você pode cadastrar vários talentos, amigos ou conhecidos. Desde que tenha a permissão do mesmo.</div>
 
             <div class="panel-body">
                 <div class="form-group">
@@ -42,7 +43,7 @@
                         <h11>*</h11>
                     </label>
                     <div class="col-md-8">
-                        <input id="nomeUsuario" name="nomeUsuario" placeholder="" class="form-control input-md"
+                        <input id="nomeUsuario" name="nomeUsuario" placeholder="Seu nome" class="form-control input-md"
                                required="" type="text">
                     </div>
 
@@ -52,7 +53,7 @@
                         <h11>*</h11>
                     </label>
                     <div class="col-md-8">
-                        <input id="profissao" name="profissao" placeholder="" class="form-control input-md" required=""
+                        <input id="profissao" name="profissao" placeholder="Sua profissão que será seu título no card" class="form-control input-md" required=""
                                type="text">
                     </div>
 
@@ -62,7 +63,7 @@
                         <h11>*</h11>
                     </label>
                     <div class="col-md-8">
-                        <input id="urlLinkedin" name="urlLinkedin" placeholder="" class="form-control input-md"
+                        <input id="urlLinkedin" name="urlLinkedin" placeholder="Link do perfil LinkedIn" class="form-control input-md"
                                required="" type="text">
                     </div>
 
@@ -72,8 +73,9 @@
                     <label class="col-md-2 control-label" for="urlLinkedin"> Cole URL Imagem
                         <h11>*</h11>
                     </label>
+
                     <div class="col-md-8">
-                        <input id="urlLinkedinImagem" name="urlLinkedinImagem" placeholder="" class="form-control input-md"
+                        <input id="urlLinkedinImagem" name="urlLinkedinImagem" placeholder="link da imagem" class="form-control input-md"
                                required="" type="text">
                     </div>
 
@@ -97,19 +99,29 @@
                                required="" type="text" maxlength="50">
                     </div>
 
-                    <label class="col-md-1 control-label" for="data">Aniversário
+
+                    <label class="col-md-1 control-label" for="pretencaoSalarial">Pretenção salarial
+                        <h11>*</h11>
+                    </label>
+                    <div class="col-md-2">
+                        <input id="pretencaoSalarial" name="pretencaoSalarial" placeholder="digite somente números" class="form-control input-md"
+                               required="" type="number" maxlength="5">
+                    </div>
+
+
+                    <!--<label class="col-md-1 control-label" for="data">Aniversário
                         <h11>*</h11>
                     </label>
                     <div class="col-md-2">
                         <input id="data" name="data" placeholder="DD/MM/AAAA" class="form-control input-md" required=""
                                type="date" maxlength="10" OnKeyPress="formatar('##/##/####', this)" onBlur="showhide()">
-                    </div>
+                    </div>-->
 
-                    <label class="col-md-1 control-label" for="estado">Estado
+                    <label class="col-md-1 control-label" for="local">Local
                         <h11>*</h11>
                     </label>
                     <div class="col-md-2">
-                        <input id="estado" name="estado" placeholder="Estado" class="form-control input-md" required="">
+                        <input id="local" name="local" placeholder="Local Desejado" class="form-control input-md" required="">
                     </div>
 
 

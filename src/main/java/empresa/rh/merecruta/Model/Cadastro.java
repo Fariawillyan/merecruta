@@ -15,9 +15,10 @@ public class Cadastro {
         private String nomeUsuario;
         private String urlLinkedin;
         private String email;
-        private String recrutimetro;
+        private int pretencaoSalarial;
         private String imagemLinkedin;
         private String profissao;
         private String descricao;
         private String urlLinkedinImagem;
+        private String local;
 }
