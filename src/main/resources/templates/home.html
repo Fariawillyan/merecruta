@@ -91,44 +91,49 @@
             <ul class="nav nav-pills card-header-pills ">
 
                 <li class="mt-auto">
-                    <a class="text " th:text="${cadastro.nomeUsuario}">Nome</a>
+                    <p class="card-text"><small class="text-muted " >&ensp;&ensp;&ensp; Nome: </small>
+                    <span  class="text-light text-uppercase" th:text="${cadastro.nomeUsuario}">Nome</span>
+
                 </li>
 
-                  <li class="mt">
-                      <p class="card-text"><small class="text-muted">Rede: </small>
+                  <li class="mt-auto">
+                      <p class="card-text"><small class="text-muted">&ensp;&ensp;&ensp; Rede: </small>
                       <a class="text" th:href="${cadastro.urlLinkedin}">Linkedin</a>
                   </li>
 
                 <li class="mt-auto">
-                    <p class="card-text"><small class="text-muted">&ensp;Contato: </small>
-                    <a class="text" th:text="${cadastro.email}">Email</a>
+                    <p class="card-text"><small class="text-muted">&ensp;&ensp;&ensp;Contato: </small>
+                    <span class="text" th:text="${cadastro.email}">Email</span>
                 </li>
 
                 <li class="mt-auto">
-                    <p class="card-text"><small class="text-muted">Pretenção Salarial: </small>
-                    <a class="text" th:text="${cadastro.pretencaoSalarial}">Pretencao Salarial</a>
+                    <p class="card-text"><small class="text-muted">&ensp;&ensp;&ensp;Pretenção Salarial: </small>
+                    <span class="text" th:text="${cadastro.pretencaoSalarial}">Pretencao Salarial</span>
                 </li>
 
                 <li class="mt-auto">
-                    <p class="card-text"><small class="text-muted">Trabalho: </small>
-                    <a class="text" th:text="${cadastro.local}">Local</a>
+                    <p class="card-text"><small class="text-muted">&ensp;&ensp;&ensp;Trabalho: </small>
+                    <span class="text" th:text="${cadastro.local}">Local</span>
                 </li>
 
             </ul>
         </div>
 
-        <div class="card-body">
+        <div class="card-body text-lg-center">
             <h5>
-                <div class="nav-fill" th:text="${cadastro.profissao}">Profissão</div>
+                <span class="text-uppercase text-primary" th:text="${cadastro.profissao}">Profissão</span>
             </h5>
 <!--
             imagem do perfil
 -->
             <img th:src="${cadastro.urlLinkedinImagem}" class="rounded float-start" width="200" height="200" alt="" src="">
 
-            <div class="nav" th:text="${cadastro.descricao}">Descricao</div>
-            <a href="#" class="btn btn-primary">Me recruta</a>
+            <div class="text-lg-start" th:text="${cadastro.descricao}">Descricao</div>
+
         </div>
+
+        <a href="#" class="btn btn-primary">Me recruta</a>
+
     </div>
 
 

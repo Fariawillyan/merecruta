@@ -4,6 +4,7 @@ import empresa.rh.merecruta.Model.Cadastro;
 import lombok.Data;
 
 import javax.validation.constraints.NotBlank;
+import javax.validation.constraints.NotNull;
 
 @Data
 public class RequisicaoNovoCadastro {
@@ -28,7 +29,7 @@ public class RequisicaoNovoCadastro {
 
     private String urlLinkedinImagem;
 
-    @NotBlank
+    @NotNull
     private int pretencaoSalarial;
 
     private String local;
