@@ -46,4 +46,16 @@ public class CadastroController {
 
     }
 
+    @GetMapping("/cadastrocomsucesso")
+    public String sucessoCadastroformulario(){
+
+        LOGGER.info("cadastrado formulario");
+
+        return "cadastradoComSucessoMsg";
+    }
+
+
+
+
+
 }

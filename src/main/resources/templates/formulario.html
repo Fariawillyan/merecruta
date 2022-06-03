@@ -20,11 +20,24 @@
     <title>banco de talentos</title></head>
 <body>
 
-<form action="/novo" method="post" class="form-horizontal ">
+<form action="/novo" method="post" class="form-horizontal " onsubmit="return Enviar()">
     <fieldset>
         <div class="panel panel-primary">
-            <div class="panel-heading">Cadastrar Novo Talento</div>
-            <div class="panel-title text-lg-center">Você pode cadastrar vários talentos, amigos ou conhecidos. Desde que tenha a permissão do mesmo.</div>
+            <div class="panel-heading ">
+                <h4><a class="nav active text-start text-white " href="/home">Voltar</a>
+                </h4>
+            </div>
+
+
+            <div class="panel-title text-lg-center">
+                <p><h2>
+                <b>CADASTRAR TALENTO</b>
+                </p></h2>
+
+
+                <p>Você pode cadastrar vários talentos, amigos ou conhecidos.
+                    Desde que tenha a <b>permissão</b> do mesmo.</p>
+            </div>
 
             <div class="panel-body">
                 <div class="form-group">
@@ -53,7 +66,8 @@
                         <h11>*</h11>
                     </label>
                     <div class="col-md-8">
-                        <input id="profissao" name="profissao" placeholder="Sua profissão que será seu título no card" class="form-control input-md" required=""
+                        <input id="profissao" name="profissao" placeholder="Sua profissão que será seu título no card"
+                               class="form-control input-md" required=""
                                type="text">
                     </div>
 
@@ -63,7 +77,8 @@
                         <h11>*</h11>
                     </label>
                     <div class="col-md-8">
-                        <input id="urlLinkedin" name="urlLinkedin" placeholder="Link do perfil LinkedIn" class="form-control input-md"
+                        <input id="urlLinkedin" name="urlLinkedin" placeholder="Link do perfil LinkedIn"
+                               class="form-control input-md"
                                required="" type="text">
                     </div>
 
@@ -75,7 +90,8 @@
                     </label>
 
                     <div class="col-md-8">
-                        <input id="urlLinkedinImagem" name="urlLinkedinImagem" placeholder="link da imagem" class="form-control input-md"
+                        <input id="urlLinkedinImagem" name="urlLinkedinImagem" placeholder="link da imagem"
+                               class="form-control input-md"
                                required="" type="text">
                     </div>
 
@@ -104,7 +120,8 @@
                         <h11>*</h11>
                     </label>
                     <div class="col-md-2">
-                        <input id="pretencaoSalarial" name="pretencaoSalarial" placeholder="digite somente números" class="form-control input-md"
+                        <input id="pretencaoSalarial" name="pretencaoSalarial" placeholder="digite somente números"
+                               class="form-control input-md"
                                required="" type="number" maxlength="5">
                     </div>
 
@@ -121,7 +138,8 @@
                         <h11>*</h11>
                     </label>
                     <div class="col-md-2">
-                        <input id="local" name="local" placeholder="Local Desejado" class="form-control input-md" required="">
+                        <input id="local" name="local" placeholder="Local Desejado" class="form-control input-md"
+                               required="">
                     </div>
 
 
@@ -145,6 +163,18 @@
                     <label class="col-md-2 control-label" for="Cadastrar"></label>
                     <div class="col-md-8">
                         <button id="Cadastrar" name="Cadastrar" class="btn btn-success" type="Submit">Cadastrar</button>
+
+                        <!--alerta de castrao-->
+                        <script>
+                            function Enviar() {
+                                var nome = document.getElementById("nomeUsuario");
+                                if (nome.value !== "") {
+                                    alert('Obrigado sr(a) ' + nome.value + ' os seus dados foram encaminhados com sucesso!');
+                                }
+                            }
+                        </script>
+
+
                         <a id="Cancelar" class="btn btn-danger" type="Reset" href="/home" role="button">Cancelar</a>
 
                     </div>
@@ -160,5 +190,6 @@
 <script>
     CKEDITOR.replace('descricao');
 </script>
+
 </body>
 </html>
