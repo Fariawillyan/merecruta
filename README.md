@@ -1,11 +1,20 @@
 ![faria](https://img.shields.io/github/issues/Fariawillyan/merecruta) ![faria2](https://img.shields.io/github/forks/Fariawillyan/merecruta) ![](https://img.shields.io/github/stars/Fariawillyan/merecruta)
 
 # Site para cadastro de talentos e vagas
-
+### Em construção!
 ## 🚀 Site
 
-Um simples CRUD onde podemos cadastrar pessoas que buscam uma oportunidade de trabalho. A ideia é disponibilizar os recursos
+Um simples site responsivo com CRUD, onde podemos cadastrar pessoas que buscam uma oportunidade de trabalho. A ideia é disponibilizar os recursos
 para os candidatos, recrutadores e empresas.
+
+<a href="https://ibb.co/JKmqLjx"><img src="https://i.ibb.co/56GkDhY/Captura-de-tela-de-2022-09-19-14-32-46.png" alt="Captura-de-tela-de-2022-09-19-14-32-46" border="0"></a>
+
+<a href="https://ibb.co/6tsNNzt"><img src="https://i.ibb.co/DMKLLhM/Captura-de-tela-de-2022-09-19-14-33-11.png" alt="Captura-de-tela-de-2022-09-19-14-33-11" border="0"></a>
+
+<a href="https://ibb.co/B6y5bfv"><img src="https://i.ibb.co/c86S0yR/Captura-de-tela-de-2022-09-19-20-05-18.png" alt="Captura-de-tela-de-2022-09-19-20-05-18" border="0"></a>
+
+
+
 
 ## 📋 Pré-requisitos
 - Java 11 https://www.oracle.com/java/technologies/javase/jdk11-archive-downloads.html
@@ -65,3 +74,6 @@ https://www.thymeleaf.org/documentation.html
 <p>Obrigado pela atenção.📢 </p>
 <p>Bora nos conhecer ??? 🍺 </p>
 <p>Abraço!</p>
+
+
+
