@@ -108,16 +108,32 @@
             </ul>
         </div>
 
-        <div class="card-body text-lg-center">
+       <!-- <div class="card-body text-lg-center">
             <h5>
                 <span class="text-uppercase text-primary" th:text="${cadastro.profissao}">Profissão</span>
             </h5>
-            <!--
+            &lt;!&ndash;
                         imagem do perfil
-            -->
-            <img th:src="${cadastro.urlLinkedinImagem}" class="rounded float-start" width="200" height="200" alt=""
-                 src="">
-            <div class="text-lg-start" th:text="${cadastro.descricao}">Descricao</div>
+            &ndash;&gt;
+
+            <img th:src="${cadastro.urlLinkedinImagem}" class="rounded float-start" width="200" height="200">
+
+            <p class="text-lg-start" th:utext="${cadastro.descricao}">Descricao</p>
+        </div>-->
+
+        <div class="card-body text-lg-start">
+            <div class="row g-0">
+                <div class="col-md-4">
+                    <img th:src="${cadastro.urlLinkedinImagem}" class="rounded float-start" width="200" height="200">
+                </div>
+                <div class="col-md-8">
+                    <div class="card-body">
+                        <h5 class="text-uppercase text-primary" th:text="${cadastro.profissao}">Profissão</h5>
+                        <p class="text-lg-start" th:utext="${cadastro.descricao}">Descricao</p>
+                        <p class="card-text"><small class="text-muted">Interessou pelo perfil? envie-me um email clicando abaixo em me recrute!</small></p>
+                    </div>
+                </div>
+            </div>
         </div>
 
         <a href="#" class="btn btn-primary">Me recruta</a>

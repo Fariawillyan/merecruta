@@ -10,6 +10,7 @@ public class MerecrutaApplication {
 
     public static void main(String[] args) {
         SpringApplication.run(MerecrutaApplication.class, args);
+        System.out.println("INICIADO PROJETO COM SUCESSO");
     }
 
 }
