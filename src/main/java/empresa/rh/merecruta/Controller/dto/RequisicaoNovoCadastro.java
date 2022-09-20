@@ -34,7 +34,7 @@ public class RequisicaoNovoCadastro {
 
     private String local;
 
-    public Cadastro toCasdastro() {
+    public Cadastro toCadastro() {
         Cadastro cadastro = new Cadastro();
         cadastro.setDescricao(descricao);
         cadastro.setNomeUsuario(nomeUsuario);

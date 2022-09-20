@@ -1,6 +1,7 @@
 package empresa.rh.merecruta.Controller;
 import empresa.rh.merecruta.Model.Cadastro;
 import empresa.rh.merecruta.Repository.CadastroRepository;
+import empresa.rh.merecruta.Service.CadastroService;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -33,6 +34,7 @@ public class HomeController {
 
         return "home";
     }
+
 
     @GetMapping("/sobre")
     public String sobre() {

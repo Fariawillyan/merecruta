@@ -4,6 +4,7 @@ package empresa.rh.merecruta.Model;
 import lombok.Data;
 
 import javax.persistence.*;
+import java.math.BigDecimal;
 
 @Data
 @Entity
@@ -21,4 +22,5 @@ public class Cadastro {
         private String descricao;
         private String urlLinkedinImagem;
         private String local;
+
 }

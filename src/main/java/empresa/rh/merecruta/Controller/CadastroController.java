@@ -9,8 +9,8 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.validation.BindingResult;
 import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.PostMapping;
-import org.springframework.web.bind.annotation.RestController;
 
 import javax.validation.Valid;
 
@@ -40,7 +40,7 @@ public class CadastroController {
 
         LOGGER.info("ACHA SALVAR CADASTRO");
 
-        Cadastro cadastro = requisicao.toCasdastro();
+        Cadastro cadastro = requisicao.toCadastro();
         cadastroService.saveCadastro(cadastro);
 
         return "home";
@@ -54,8 +54,6 @@ public class CadastroController {
 
         return "cadastradoComSucessoMsg";
     }
-
-
 
 
 

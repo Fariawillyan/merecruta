@@ -15,4 +15,5 @@ public class CadastroServiceImplements implements CadastroService {
     public Cadastro saveCadastro(Cadastro cadastro) {
         return cadastroRepository.save(cadastro);
     }
+
 }
