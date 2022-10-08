@@ -52,9 +52,31 @@ Rode a aplicação. Abre o link http://localhost:8080/home ou de acordo com seu 
 Por favor, Agradeço se houver críticas construtivas. Caso queira contribuir com meus projetos ou contratações, entre em contatos pelos meios disponíveis na página.
 
 
-## ✒️ Autor
+## ✒️ Autores
 
-Willyan faria.
+<table>
+<tbody>
+<tr>
+
+<td align="center">
+<a href="https://github.com/fariawillyan">
+<img src ="https://avatars.githubusercontent.com/u/59929628?v=4" width="100px;" alt style="max-width: 100%;">
+
+<br>
+<sub>
+<b>Willyan Faria</b>
+</sub>
+</a>
+<br>
+
+<a href="https://github.com/Fariawillyan/merecruta">
+</td>
+
+<tr>
+<tbody>
+<table>
+
+
 
 ## :warning: NÃO HESITE EM CONTATAR O DESENVOLVEDOR PARA EXPLANAR A SUA DÚVIDA!!!
 Estou à Disposição.
