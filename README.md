@@ -1,6 +1,6 @@
 ![faria](https://img.shields.io/github/issues/Fariawillyan/merecruta) ![faria2](https://img.shields.io/github/forks/Fariawillyan/merecruta) ![](https://img.shields.io/github/stars/Fariawillyan/merecruta)
 
-# Site para cadastro de talentos e vagas
+# Site OPEN-SOURCE para cadastro de talentos e vagas
 ### Em construção!
 ## 🚀 Site
 
