@@ -91,11 +91,6 @@ https://getbootstrap.com/docs/4.1/getting-started/introduction/
 ### Thymeleaf
 https://www.thymeleaf.org/documentation.html
 
-# 🎁 Sempre grato a vocês!
-
-<p>Obrigado pela atenção.📢 </p>
-<p>Bora nos conhecer ??? 🍺 </p>
-<p>Abraço!</p>
-
+# 🎁 Volte sempre!
 
 
