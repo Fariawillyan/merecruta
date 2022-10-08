@@ -4,7 +4,7 @@
 ### Em construção!
 ## 🚀 Site
 
-Um simples site responsivo com CRUD, onde podemos cadastrar pessoas que buscam uma oportunidade de trabalho. A ideia é disponibilizar os recursos
+Um simples site responsivo com persistência a dados, onde podemos cadastrar pessoas que buscam uma oportunidade de trabalho. A ideia é disponibilizar os recursos
 para os candidatos, recrutadores e empresas.
 
 <a href="https://ibb.co/JKmqLjx"><img src="https://i.ibb.co/56GkDhY/Captura-de-tela-de-2022-09-19-14-32-46.png" alt="Captura-de-tela-de-2022-09-19-14-32-46" border="0"></a>
